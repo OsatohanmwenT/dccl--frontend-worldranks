@@ -18,7 +18,7 @@ export default function Country() {
     }, [country.borders,data]);
 
     return(
-        <div className="flex flex-col relative lg:min-w-[700px] lg:max-w-[700px] pb-10">
+        <div className="flex flex-col relative mx-auto lg:min-w-[700px] lg:max-w-[700px] pb-10">
             <div className="relative mx-auto  -top-[50px]">
                 <img className="w-[250px] h-[200px] rounded-xl" src={country.flags.png} alt={country.name.common} />
             </div>
