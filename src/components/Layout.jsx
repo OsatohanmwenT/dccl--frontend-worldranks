@@ -10,7 +10,7 @@ export default function Layout() {
             <Link to="/">
                 <img className='mx-auto my-24 ' width={300} height={100} src={LogoIcon} alt="World ranks logo" />
             </Link>
-            <main className="sm:rounded-2xl mx-auto md:w-fit md:border-[1px] border-white/20 bg-very-dark-grey md:mb-7">
+            <main className="sm:rounded-2xl md:w-fit md:border-[1px] border-white/20 bg-very-dark-grey md:mb-7">
                 <Outlet context={{ data }} />
             </main>
         </div>
