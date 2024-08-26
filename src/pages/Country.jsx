@@ -18,7 +18,8 @@ export default function Country() {
     }, [country.borders,data]);
 
     return(
-        <div className="flex flex-col relative mx-auto lg:min-w-[700px] lg:max-w-[700px] pb-10">
+        <main className="sm:rounded-2xl mx-auto md:border-[1px] border-white/20 bg-very-dark-grey md:mb-7">
+            <div className="flex flex-col relative mx-auto lg:min-w-[700px] lg:max-w-[700px] pb-10">
             <div className="relative mx-auto  -top-[50px]">
                 <img className="w-[250px] h-[200px] rounded-xl" src={country.flags.png} alt={country.name.common} />
             </div>
@@ -88,6 +89,8 @@ export default function Country() {
                  : <h1 className="text-white text-2xl mt-5 font-semibold">No Neighbouring Countries Found</h1>
             }
             
-        </div>
+            </div>
+        </main>
+        
     )
 }

@@ -113,7 +113,8 @@ export default function Countries() {
     const numOfCountries = filterByStatus.length;
 
     return(
-        <main className="flex flex-col mx-auto gap-6 p-6">
+        <main className="sm:rounded-2xl mx-auto md:border-[1px] border-white/20 bg-very-dark-grey md:mb-7">
+            <main className="flex flex-col mx-auto gap-6 p-6">
             <div className="flex items-center justify-between">
                 <p className="text-grey font-bold text-base">Found {numOfCountries} countries</p>
                 <div className="bg-grey/30 rounded-xl p-2 flex gap-2 w-[max(40%,250px)]">
@@ -208,6 +209,8 @@ export default function Countries() {
             </div>
                 </div>
             </div>
+            </main>
         </main>
+        
     )
 }
